@@ -1,0 +1,21 @@
+PAGE DE GESTION DE TAKALO :
+	Page = 
+	Login
+	admin :
+		gestion des categorie des objects
+	client :
+		liste des objest proposer par d'autres utilisateurs
+		inserer ses objets (nom,description, prix)
+		liste des propositions des autres utilisateurs (accepter, annuler un echange)
+		proposition echange avec d'autres utilisateur
+
+	conception table :
+	personne (idpersonne,email, mdp1, nom, date_naissance, est_admin);
+	Categorie (idcategorie, nom)
+	Object (idobject, idpersonne, idcategorie, nom, descrition, prix estimatif)
+	photos (idobject, lien);
+	proposition (idproposeur, iddestinateur, idobjet1 , idobjet2, est_accepter)
+	action (idaction, libelle, personne1, personne2, objet1, object2)
+	
+	
+	
